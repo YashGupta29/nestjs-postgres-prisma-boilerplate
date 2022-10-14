@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "es2017",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "app/*": ["src/modules/app/*"],
+      "strategy": ["src/strategy/index"],
+      "common/*": ["src/modules/common/*"],
+      "prisma/*": ["src/modules/common/prisma/*"],
+      "token/*": ["src/modules/common/token/*"],
+      "mail/*": ["src/modules/common/mail/*"],
+      "v1/*": ["src/modules/v1/*"],
+      "auth/*": ["src/modules/v1/auth/*"],
+      "user/*": ["src/modules/v1/user/*"],
+    }
+  }
+}
